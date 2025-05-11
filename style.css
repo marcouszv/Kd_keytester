@@ -1,0 +1,136 @@
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 4px;
+    border-color: gray;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+tbody {
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: #333;
+}
+
+.key {
+    padding: 8px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+}
+
+/* Teclas con funciones*/
+.key.functional {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+/* Números y símbolos */
+.key.symbol {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Letras */
+.key.letter {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Teclas especiales*/
+.key.special {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Numeros */
+.key.numeric {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Flechitas */
+.key.navigation {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.key:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.key.active {
+    background-color: #ff3b3b; /* Color amarillo para indicar que está activa */
+    box-shadow: 0 0 10px rgba(255, 147, 59, 0.8); /* Efecto de brillo */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.key-group {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.key-row {
+    margin: 4px 0;
+}
+
+.key-block {
+    display: inline-block; /* Orientación de las tablas*/
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.key-block.numeric {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    float: left; /* Opcional si usas flexbox */
+}
+
+.key-block.navigation {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    float: right; /* Opcional si usas flexbox */
+}
+
+.key-block-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+p {
+    color: #666;
+}

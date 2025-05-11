@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyTester</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>KeyTester</h1>
+    <p>Pruebe su teclado</p>
+    <p id="keycode"></p>
+    <table id="keyboard">
+        <tbody>
+            <tr class="key-row functional">
+                <td colspan="2">
+                    <div class="key-group">
+                        <div id="key27" class="key functional">Esc</div>
+                        <div id="key112" class="key functional">F1</div>
+                        <div id="key113" class="key functional">F2</div>
+                        <div id="key114" class="key functional">F3</div>
+                        <div id="key115" class="key functional">F4</div>
+                        <div id="key116" class="key functional">F5</div>
+                        <div id="key117" class="key functional">F6</div>
+                        <div id="key118" class="key functional">F7</div>
+                        <div id="key119" class="key functional">F8</div>
+                        <div id="key120" class="key functional">F9</div>
+                        <div id="key121" class="key functional">F10</div>
+                        <div id="key122" class="key functional">F11</div>
+                        <div id="key123" class="key functional">F12</div>
+                        <div id="key145" class="key functional">Num</div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="key-row symbols">
+                <td>
+                    <div class="key-group">
+                        <div id="key49" class="key symbol">1</div>
+                        <div id="key50" class="key symbol">2</div>
+                        <div id="key51" class="key symbol">3</div>
+                        <div id="key52" class="key symbol">4</div>
+                        <div id="key53" class="key symbol">5</div>
+                        <div id="key54" class="key symbol">6</div>
+                        <div id="key55" class="key symbol">7</div>
+                        <div id="key56" class="key symbol">8</div>
+                        <div id="key57" class="key symbol">9</div>
+                        <div id="key58" class="key symbol">0</div>
+                        <div id="key189" class="key symbol">-</div>
+                        <div id="key187" class="key symbol">=</div>
+                        <div id="key8" class="key symbol">Back</div>    
+                    </div>
+                </td>
+                <td>
+                    <div class="key-block-container">
+                        <table class="key-block numeric">
+                            <tbody>
+                                <tr>
+                                    <td id="key144" class="key numeric">Num<br>Lck</td>
+                                    <td id="key111" class="key numeric">/</td>
+                                    <td id="key106" class="key numeric">*</td>
+                                    <td id="key109b" class="key numeric">-</td>
+                                </tr>
+                                <tr>
+                                    <td id="key103" class="key numeric">7</td>
+                                    <td id="key104" class="key numeric">8</td>
+                                    <td id="key105" class="key numeric">9</td>
+                                    <td id="key107b" class="key numeric" rowspan="2">+</td>
+                                </tr>
+                                <tr>
+                                    <td id="key100" class="key numeric">4</td>
+                                    <td id="key101" class="key numeric">5</td>
+                                    <td id="key102" class="key numeric">6</td>
+                                </tr>
+                                <tr>
+                                    <td id="key97" class="key numeric">1</td>
+                                    <td id="key98" class="key numeric">2</td>
+                                    <td id="key99" class="key numeric">3</td>
+                                    <td id="key13b" class="key special">Enter</td>
+                                </tr>
+                                <tr>
+                                    <td id="key96" class="key numeric">0</td>
+                                    <td id="key110" class="key numeric">.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="key-row letters">
+                <td>
+                    <div class="key-group">
+                        <div id="key9" class="key functional">Tab</div>
+                        <div id="key81" class="key letter">Q</div>
+                        <div id="key87" class="key letter">W</div>
+                        <div id="key69" class="key letter">E</div>
+                        <div id="key82" class="key letter">R</div>
+                        <div id="key84" class="key letter">T</div>
+                        <div id="key89" class="key letter">Y</div>
+                        <div id="key85" class="key letter">U</div>
+                        <div id="key73" class="key letter">I</div>
+                        <div id="key79" class="key letter">O</div>
+                        <div id="key80" class="key letter">P</div>
+                        <div id="key219" class="key symbol">[</div>
+                        <div id="key221" class="key symbol">]</div>
+                        <div id="key220" class="key symbol">\</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="key-block-container">
+                        <table class="key-block navigation">
+                            <tbody>
+                                <tr>
+                                    <td class="blank">&nbsp;</td>
+                                    <td id="key38" class="key navigation">↑</td>
+                                    <td class="blank">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="key37" class="key navigation">←</td>
+                                    <td id="key40" class="key navigation">↓</td>
+                                    <td id="key39" class="key navigation">→</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="key-row letters">
+                <td>
+                    <div class="key-group">
+                        <div id="key20" class="key letter">Caps</div>
+                        <div id="key65" class="key letter">A</div>
+                        <div id="key83" class="key letter">S</div>
+                        <div id="key68" class="key letter">D</div>
+                        <div id="key70" class="key letter">F</div>
+                        <div id="key71" class="key letter">G</div>
+                        <div id="key72" class="key letter">H</div>
+                        <div id="key74" class="key letter">J</div>
+                        <div id="key75" class="key letter">K</div>
+                        <div id="key76" class="key letter">L</div>
+                        <div id="key186" class="key symbol">;</div>
+                        <div id="key222" class="key symbol">'</div>
+                        <div id="key13" class="key special">Enter</div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="key-row letters">
+                <td>
+                    <div class="key-group">
+                        <div id="key16" class="key letter">Shift</div>
+                        <div id="key90" class="key letter">Z</div>
+                        <div id="key88" class="key letter">X</div>
+                        <div id="key67" class="key letter">C</div>
+                        <div id="key86" class="key letter">V</div>
+                        <div id="key66" class="key letter">B</div>
+                        <div id="key78" class="key letter">N</div>
+                        <div id="key77" class="key letter">M</div>
+                        <div id="key188" class="key symbol">,</div>
+                        <div id="key190" class="key symbol">.</div>
+                        <div id="key191" class="key symbol">/</div>
+                        <div id="key16b" class="key letter">Shift</div>
+                        <div id="key32" class="key letter">Space</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- filepath: c:\Users\DignaFactisRecipimus\Desktop\Proyecto\templates\Index.html -->
+<script>
+    // Detecta cuando una tecla es presionada
+    document.addEventListener('keydown', (event) => {
+        const key = document.getElementById(`key${event.keyCode}`);
+        if (key) {
+            key.classList.add('active'); // Agrega la clase 'active' para iluminar la tecla
+            document.getElementById('keycode').innerText = `Tecla presionada: ${event.key} (Código: ${event.keyCode})`;
+        }
+    });
+
+    // Detecta cuando una tecla es soltada
+    document.addEventListener('keyup', (event) => {
+        const key = document.getElementById(`key${event.keyCode}`);
+        if (key) {
+            key.classList.remove('active'); // Remueve la clase 'active' para apagar la iluminación
+        }
+    });
+</script>
+</body>
+</html>
